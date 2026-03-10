@@ -16,7 +16,7 @@ def day_of_week():
         print(f"The number {day_number} corresponds to {days[day_number]}")
         
     except ValueError:
-        print("Invalid input. Please enter a number between 1 and 7.")
+        print("Invalid input. Please enter a integer between 1 and 7.")
 
 # Test.
 day_of_week()

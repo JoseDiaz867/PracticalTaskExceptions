@@ -4,12 +4,10 @@ The program must provide the ability to enter a negative number, and in this cas
 should call a function that processes the information entered.
 """
 
-def check_age():
-
-   
+def check_age(user_input : str):
 
     try:
-        age = float(input("Enter your age: "))
+        age = int(user_input)
         if (age < 0):
             raise ValueError
         
@@ -18,8 +16,8 @@ def check_age():
         else:
             print("Your age is odd.")
     except ValueError:
-        print("Invalid input. Age must be a positive number.")
+        print("Invalid input. Age must be a positive integer.")
+
     
 # Test.
-
-check_age()
+check_age(input("Enter your age: "))
